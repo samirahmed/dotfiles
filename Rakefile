@@ -6,7 +6,7 @@ task :install do
   install_oh_my_zsh
   switch_to_zsh
   replace_all = false
-  files = Dir['*'] - %w[Rakefile README.rdoc LICENSE oh-my-zsh]
+  files = Dir['*'] - %w[Rakefile README.rdoc LICENSE oh-my-zsh retired]
   files << "oh-my-zsh/custom/plugins/rbates"
   files << "oh-my-zsh/custom/rbates.zsh-theme"
   files.each do |file|
