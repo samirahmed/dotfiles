@@ -1,0 +1,9 @@
+[user]
+	name = Samir Ahmed
+	email = samirahmed2013@gmail.com
+[core]
+	editor = vim
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit
+[color]
+	ui = true
