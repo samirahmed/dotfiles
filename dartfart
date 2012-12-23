@@ -1,0 +1,1 @@
+alias datafart='curl --data-binary @- datafart.com'
