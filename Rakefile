@@ -3,6 +3,7 @@ require 'erb'
 
 desc "install the dot files into user's home directory"
 task :install do
+  install_homebrew if RUBY_PLATFORM.downcase.include?("darwin") 
   install_oh_my_zsh
   switch_to_zsh
   replace_all = false
@@ -86,4 +87,26 @@ def install_oh_my_zsh
       puts "skipping oh-my-zsh, you will need to change ~/.zshrc"
     end
   end
+end
+
+def run(cmd)
+  puts "[Running] #{cmd}"
+  `#{cmd}` unless ENV['DEBUG']
+end
+
+#Taken from skwp/dotfiles
+def install_homebrew
+  puts "======================================================"
+  puts "Installing Homebrew, the OSX package manager...If it's"
+  puts "already installed, this will do nothing."
+  puts "======================================================"
+  run %{ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"}
+  puts
+  puts
+  puts "======================================================"
+  puts "Installing Homebrew packages...There may be some warnings."
+  puts "======================================================"
+  run %{brew install ack ctags git hub}
+  puts
+  puts
 end

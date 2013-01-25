@@ -63,6 +63,7 @@ autocmd BufNewFile,BufRead  *.md   source ~/.vim/markdown.vim
 autocmd BufNewFile,BufRead  *.md,*.html,*.xml  source ~/.vim/closetag.vim
 autocmd BufNewFile,BufRead  *.py  source ~/.vim/python.vim
 autocmd BufNewFile,BufRead  *.rb  source ~/.vim/ruby.vim
+autocmd BufNewFile,BufRead  *.haml  source ~/.vim/haml.vim
 autocmd BufNewFile,BufRead  *.sass set expandtab
 source ~/.vim/supertab.vim
 filetype plugin on
