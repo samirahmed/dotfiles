@@ -106,7 +106,7 @@ def install_homebrew
   puts "======================================================"
   puts "Installing Homebrew packages...There may be some warnings."
   puts "======================================================"
-  run %{brew install ack ctags git hub}
+  run %{brew install ack}
   puts
   puts
 end
