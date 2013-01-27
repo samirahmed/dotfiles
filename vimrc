@@ -81,6 +81,7 @@ set showmode
 """""""""""""""""""""
 
 call pathogen#infect()
+Helptags
 
 """"""""""""""""""""""
 " NERD TREE
@@ -113,3 +114,23 @@ noremap q' ysiw'
 let g:syntastic_mode_map = { 'mode' : 'passive' , 'active_filetypes' : [] , 'passive_filetypes': [] }
 noremap <C-e> :SyntasticToggleMode<CR> 
 
+""""""""""""""""""""""
+" Solarized 
+"""""""""""""""""""""
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+
+"""""""""""""""""""""""
+" Tagbars
+""""""""""""""""""""""
+imap <F8> <ESC>:TagbarToggle<CR>
+nmap <F8> :TagbarToggle<CR>
+
+""""""""""""""""""""""""
+" Powerline
+"""""""""""""""""""""""""
+set nocompatible   " Disable vi-compatibility
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show Unicode glyphs
+"let g:Powerline_symbols = 'fancy'"
