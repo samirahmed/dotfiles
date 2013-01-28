@@ -43,12 +43,12 @@ compinit
 ##############
 # LS Alias   #
 ##############
+
 alias ls='ls -G' 	#I like color
 alias ll='ls -l '	  #I like lists
 alias la='ls -lAFh'   #long list,show almost all,show type,human readable
 alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
 alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable
-
 
 #################
 # General Alias #
@@ -59,20 +59,14 @@ alias rm='rm -i' 			# precautionary
 alias ports='port' 			# bad habit of mine
 alias pandora='pianobar'	# i never remember this name
 alias todo='todo.sh'      # todo
+
 #############
 # BoomMarks #
 #############
 
-export fu=~/dropbox/dev/fu
-export typometrics=~/dropbox/dev/typometrics
-export algorithms=~/dropbox/work/spring12/algorithms
-export ai=~/dropbox/work/spring12/ai
-export os=~/dropbox/work/spring12/os
 export tmp=~/dropbox/tmp
 export code=~/dropbox/code
 export public=~/dropbox/public
-export RA=~/dropbox/RA
-export credport=~/dropbox/webcred/credport
 export dev=~/dropbox/dev
 
  [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
@@ -81,3 +75,11 @@ export dev=~/dropbox/dev
 # Topical Sourcing #
 ####################
 source ~/.datafart
+
+#######################################
+# Renable git autocomplete with alias #
+#######################################
+alias git=hub
+if type compdef >/dev/null; then
+   compdef hub=git
+fi
