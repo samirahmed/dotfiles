@@ -1,5 +1,23 @@
 #  Dot Files for SamirAhmed
 
+Inspired by [ryanb](https://github.com/ryanb/dotfiles) and [skwp](https://github.com/skwp/dotfiles) 
+
+## Install
+
+```
+git clone https://github.com/samirahmed/dotfiles.git
+cd dotfiles
+rake install
+```
+
+## What does it do? 
+
+Vim Plugins - to make your vim look like this
+![vim sample](http://i.imgur.com/W6vjEs5.png)
+
+I use zsh and in particular oh-my-zsh
+
+OSX and Linux compatible
 
 ## Uninstall
 
@@ -8,9 +26,6 @@ To remove the dotfile configs, run the following commands. Be certain to double 
 ```
 unlink ~/.bin
 unlink ~/.gitignore
-unlink ~/.gemrc
-unlink ~/.gvimrc
-unlink ~/.irbrc
 unlink ~/.vim
 unlink ~/.vimrc
 rm ~/.zshrc # careful here
