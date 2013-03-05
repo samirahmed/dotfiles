@@ -36,9 +36,15 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/opt/local/bin:/opt/local/sbin:$PATH
 
+# custom autocompletes
+fpath=( $HOME/.zsh/completions $fpath)
+
 # enable autocomplete?
 autoload -U compinit
 compinit
+
+# at least 2 options
+zstyle ':completion:*' menu select=2
 
 ##############
 # LS Alias   #
