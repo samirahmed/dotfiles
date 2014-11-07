@@ -6,9 +6,9 @@ Inspired by [ryanb](https://github.com/ryanb/dotfiles) and [skwp](https://github
 
 ```
 git clone https://github.com/samirahmed/dotfiles.git
+cd dotfiles
 git submodules init
 git submodules update
-cd dotfiles
 rake install
 ```
 
