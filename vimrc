@@ -17,7 +17,7 @@ highlight PMenuSel 		term=reverse cterm=bold ctermfg=red ctermbg=black
 
 " Set the scroll offset to be 10 lines
 set scrolloff=10
-set backspace+=indent,eol,start
+set backspace=indent,eol,start
 " Map CTRL-L to go to the last line on the screen
 map! <C-L> <ESC>Li
 
