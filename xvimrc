@@ -1,0 +1,6 @@
+
+" Map CTRL-E to go to end of line
+map! <C-e> <ESC>$a
+
+" Map CTRL-A to go the start of line
+map! <C-a> <ESC>^i
