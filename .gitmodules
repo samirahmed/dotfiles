@@ -1,3 +1,27 @@
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
+[submodule "vim/bundle/vim-powerline"]
+	path = vim/bundle/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline
+[submodule "vim/bundle/vim-gitgutter"]
+	path = vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "vim/bundle/nerdcommenter"]
+	path = vim/bundle/nerdcommenter
+	url = https://github.com/preservim/nerdcommenter
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic
+[submodule "vim/bundle/rainbow_parentheses"]
+	path = vim/bundle/rainbow_parentheses
+	url = https://github.com/kien/rainbow_parentheses.vim
+[submodule "vim/bundle/vim-endwise"]
+	path = vim/bundle/vim-endwise
+	url = https://github.com/tpope/vim-endwise
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
