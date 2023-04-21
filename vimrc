@@ -1,4 +1,11 @@
 
+"""""""""""""""""""""
+" Configure Pathogen
+"""""""""""""""""""""
+
+call pathogen#infect()
+Helptags
+
 """""""""""""""""""""""""""""""""""""""""""""
 " Environment + Visual Settings
 "
@@ -85,12 +92,6 @@ nnoremap <C-p> :set invpaste paste?<CR>
 set pastetoggle=<C-p>
 set showmode
 
-"""""""""""""""""""""
-" Configure Pathogen
-"""""""""""""""""""""
-
-call pathogen#infect()
-Helptags
 
 """"""""""""""""""""""
 " NERD TREE

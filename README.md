@@ -4,13 +4,23 @@ Inspired by [ryanb](https://github.com/ryanb/dotfiles) and [skwp](https://github
 
 ## Install
 
+if this is a new computer
+```
+brew install autojump
+brew install tree
+brew install rake 
+brew install python3
+brew install hub
+```
+
 ```
 git clone https://github.com/samirahmed/dotfiles.git
 cd dotfiles
-git submodules init
-git submodules update
+git submodule init
+git submodule update
 rake install
 ```
+
 
 ## What does it do? 
 
